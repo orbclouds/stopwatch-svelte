@@ -9,6 +9,8 @@
 <script lang="ts">
   import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
 
+  import Orb from '@app/Orb';
+
   let running = false;
   let time = DEFAULT_TIME;
   let interval: ReturnType<
@@ -58,6 +60,8 @@
       .SNOWPACK_PUBLIC_GOOGLE_ANALYTICS_ID,
   ]}
 />
+
+<Orb />
 
 <main>
   <div class="stopwatch">
